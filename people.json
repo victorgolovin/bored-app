@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Victor",
+        "age": 29,
+        "gender": "male",
+        "hobbies": [
+            "work",
+            "game",
+            "rest"
+        ]
+    },
+    {
+        "name": "Alex",
+        "age": 35,
+        "gender": "male",
+        "hobbies": [
+            "work",
+            "fontend"
+        ]
+    }
+]
