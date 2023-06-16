@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(orangered, gold);
+    
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 115px;
+    
+}
+
+.bored-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.bored-text {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 94px;
+}
+
+.bored-btn {
+    width: 500px;
+    height: 60px;
+    background-color: #0094FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
