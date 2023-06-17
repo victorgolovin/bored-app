@@ -24,7 +24,7 @@ const boredTitleChanger = () => {
 };
 
 const boredColorChanger = () => {
-    bodyColor.style.background = "linear-gradient(orangered, white)";
-}
+  bodyColor.style.background = "linear-gradient(orangered, white)";
+};
 
 boredBtn.addEventListener("click", boredHandler);
