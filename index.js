@@ -1,29 +1,30 @@
-fetch("http://www.boredapi.com/api/activity/")
-    .then(data => data.json())
-    .then((activity) => {
-        const boredText = activity.message;
+const boredBtn = document.getElementById("bored-btn");
+const boredTitle = document.getElementById("bored-title");
+const bodyColor = document.getElementById("body-color");
 
-        document.getElementById("bored-text").innerHTML = `
-        <p
-            '${boredText}'>
-            `;
-    })
+const boredHandler = () => {
+  fetch("http://www.boredapi.com/api/activity/")
+    .then((data) => data.json())
+    .then((res) => {
+      const boredText = res.activity;
 
-const boredBtn = document.getElementById("bored-btn")
-
-
-fetch("http://www.boredapi.com/api/activity/")
-   .then(response => console.log(response));
-
-
-fetch("http://www.boredapi.com/api/activity/")
-       .then(response => response.json())
-       .then((activity) => {
-        const boredText = activity.message;
-
-        document.getElementById("bored-text").innerHTML = `
+      document.getElementById("bored-text").innerHTML = `
         <p>
         ${boredText}
         </p>
             `;
-       });
+    });
+
+  boredTitleChanger();
+  boredColorChanger();
+};
+
+const boredTitleChanger = () => {
+  boredTitle.innerText = "Ура, теперь не скучно 🔥";
+};
+
+const boredColorChanger = () => {
+    bodyColor.style.background = "linear-gradient(orangered, white)";
+}
+
+boredBtn.addEventListener("click", boredHandler);

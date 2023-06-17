@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(orangered, gold);
-    
+    background: linear-gradient(orangered, green);
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
