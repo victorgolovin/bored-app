@@ -3,7 +3,7 @@ const boredTitle = document.getElementById("bored-title");
 const bodyColor = document.getElementById("body-color");
 
 const boredHandler = () => {
-  fetch("http://www.boredapi.com/api/activity/")
+  fetch("HTTPS://www.boredapi.com/api/activity/")
     .then((data) => data.json())
     .then((res) => {
       const boredText = res.activity;
